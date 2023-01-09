@@ -1,0 +1,16 @@
+{% extends "master.html" %}
+
+{% block title %}
+  Details about {{ myproducs.name }} {{ myproducts.type }}
+{% endblock %}
+
+
+{% block content %}
+  <h1>{{ myproducts.name }} {{ myproducts.type }}</h1>
+  
+  <p>Price {{ myproducts.price }}</p>
+  <p>Amount: {{ myproduct.Amount_left }}</p>
+  
+  <p>Back to <a href="/products">Product</a></p>
+  
+{% endblock %}
